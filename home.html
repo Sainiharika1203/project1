@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>
+            Pista House
+        </title>
+        <link href="https://sarathcitycapitalmall.com/wp-content/uploads/2020/03/Pista-house-1250x250-1.jpg" rel="icon">
+        <style>
+            .container{
+                
+                width: 1500px;
+                height: 800px;
+            }
+            .phone{
+               
+                width: 1500px;
+                height: 35px;
+                background-color: #d4e0d2;
+            }
+            .callus{
+                color: green;
+                text-align: center;
+                margin-top: 10px;
+                font-size: 15px;
+                
+            }
+            .search{
+               
+                width: 1500px;
+                height:120px;
+                background-color: #f3f7f1;
+            }
+            .pista-image{
+                margin-top: 28px;
+                margin-left: 25px;
+
+            }
+            .searchbar{
+                width: 500px;
+                height: 35px;
+                position: absolute;
+                top: 85px;
+                padding: 2px;
+                border-radius: 25px;
+                left: 385px;
+            }
+            #searchicon{
+                margin-left: 120px;
+            }
+            .acc-button{
+                width: 150px;
+                height: 50px;
+                background-color: #d9e8d2;
+                border-radius: 25px;
+                position: absolute;
+                top:78px;
+                left: 920px;
+
+            }
+            .cart-button{
+                width: 150px;
+                height: 50px;
+                background-color: #1e3819;
+                color:white;
+                border-radius: 25px;
+                position: absolute;
+                left: 1080px;
+                top:78px;
+            }
+            .nav-bar{
+              
+                width: 1500px;
+                height:80px;
+                background-color: white;
+                border:1px solid lightgrey;
+                
+            }
+            a{
+                text-decoration: none;
+                padding-left: 15px;
+                color: black;
+                font-size: 20px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+
+            nav{
+                margin-left: 20px;
+                margin-top: 27px;
+            }
+            .shopby{
+               
+                width: 1500px;
+                height:80px;
+            }
+            .shpby{
+                margin-left: 20px;
+                font-size: 30px;
+            }
+            .view{
+                position: absolute;
+                color: #3C7C22;
+                top: 260px;
+                left: 1300px;
+                font-weight: 700;
+
+            }
+            .images{
+                width: 1500px;
+                height:260px;
+                display: flex;
+                justify-content: space-around;
+            }
+            .specials{
+                width: 180px;
+                border: 1px solid black;
+                height:240px;
+                background-color: #f7f7f7;
+                border-radius: 15px;
+            }
+            .specials-btns{
+                width: 120px;
+                height: 30px;
+                background-color: #d9e8d2;
+                border-radius: 25px;
+                font-weight: 900px;
+                color: green;
+                margin-left: 25px;
+                margin-top: 17px;
+            }
+            .specials>img{
+                padding:10px;
+            }
+            .parent{
+                display: flex;
+                justify-content: space-around;
+            }
+            .child{
+                border: 1px solid lightgray;
+                width: 300px;
+                height: 550px;
+                border-radius: 25px;
+            }
+            .best{
+                margin-left: 20px;
+                font-size: 30px;
+            }
+            #item-names{
+                font-size: 25px;
+                text-align: center;
+
+            }
+            #rates{
+                font-size: 25px;
+                font-weight: 900px;
+                margin-left: 10px;
+            }
+            .buy{
+                width: 250px;
+                height: 35px;
+                margin-left: 20px;
+            }
+            .buy:hover{
+                background-color:grey;
+                text-decoration:underline;
+
+            }
+            .spc{
+                border-radius: 25px;
+            }
+            .shopnow{
+                width: 100%;
+            }
+            .shop{
+                margin-left: -30px;
+            }
+            .image{
+                transition:2s
+            }
+            .image:hover{
+                transform: scale(1.1,1.1);
+            }
+            .specials-btns:hover{
+                text-decoration: underline;
+            }
+            footer{
+            background-color:#f4ead6;
+            position: absolute;
+            top:2350px;
+            width:1500px;
+            height:400px;
+        }
+        .foot{
+        position:absolute;
+        top:0px;
+        }
+        .footimg{
+           position:absolute;
+           top:100px;
+           left:120px;
+
+        }
+        .tabfoot{
+               display: flex;
+               position:absolute;
+               left:500px
+        }
+        .tabfoot1{
+               display: flex;
+               position:absolute;
+               left:730px
+        }
+        .tabfoot2{
+               display: flex;
+               position:absolute;
+               left:950px;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="phone">
+                <p class="callus">CALL US : 93965 00786</p>
+            </div>
+            <div class="search">
+                <img src="pistahouse.jpeg" class="pista-image">
+                <input class="searchbar" placeholder="&nbsp; &nbsp;&nbsp; &nbsp;  Search for..">
+                <button class="acc-button"><i class="fa fa-user" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</i>Account</button>
+                <button class="cart-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;₹ 0.00
+                    0</button>
+            </div>
+            <div class="nav-bar">
+               <nav>
+                <a href="index.html">Explore Products</a>
+                <a href="about.html">About</a>
+                <a href="franchise.html">Franchise</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="store.html">Store Locator</a>
+               </nav>
+               
+            </div>
+            <div class="shopby">
+                <h1 class="shpby"> Shop By Category</h1>
+                <p class="view">
+                    View all collections
+                </p>
+            </div>
+            <div class="images">
+                <div class="specials">
+                    <img src="haleem.webp" width="150px" height="150px" class="image"> <button class="specials-btns">Haleem</button>
+                </div>
+                <div class="specials">
+                    <img src="biscuits.jpeg" width="150px" height="150px" class="image"> <button class="specials-btns">Biscuits</button>
+                </div>
+                <div class="specials">
+                    <img src="biryani.jpeg" width="150px" height="150px" class="image"> <button class="specials-btns">Biryani</button>
+                </div>
+                <div class="specials">
+                    <img src="sweets.jpeg" width="150px" height="150px" class="image"> <button class="specials-btns">Sweets</button>
+                </div>
+                <div class="specials">
+                    <img src="all.jpeg" width="150px" height="150px" class="image"> <button class="specials-btns">Baklava</button>
+                </div>
+                <div class="specials">
+                    <img src="suprisegift.jpeg" width="150px" height="150px" class="image"> <button class="specials-btns">GiftHampers</button>
+                </div>
+            </div>
+            <h1 class="best">Best Sellers</h1>
+            <div class="parent">
+                <div class="child">
+                    <img src="OsmaniaBiscuits.webp" width="300px" height="350px" class="spc">
+                    <p id="item-names">Osmania Biscuit 500 GMS</p>
+                    <p id="rates">₹ 170.00</p>
+                    <button class="buy">Buy Now</button>
+                </div>
+                <div class="child">
+                    <img src="PistaDateRoll.webp" width="300px" height="350px" class="spc">
+                    <p id="item-names">Pista Date Roll 500 GMS</p>
+                    <p id="rates">₹ 270.00</p>
+                    <button class="buy">Buy Now</button>
+                </div>
+                <div class="child">
+                    <img src="PistaSpecialCookies.webp" width="300px" height="350px" class="spc">
+                    <p id="item-names">Pista Date Specials 250 GMS</p>
+                    <p id="rates">₹ 200.00</p>
+                    <button class="buy">Buy Now</button>
+                </div>
+                <div class="child">
+                    <img src="./fruitbiscuits.webp" width="300px" height="350px" class="spc" alt="fruitbiscuits">
+                    <p id="item-names">Fruit Biscuit Date 500 GMS</p>
+                    <p id="rates">₹ 250.00</p>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="shopnow">
+                <img src="spreadofjoy.jpeg" width="1550px" height="470px" class="shop">
+            </div>
+            <div class="parent">
+                <div class="child">
+                    <img src="KajuKatli.jpg" width="300px" height="350px" class="spc">
+                    <p id="item-names">Kajju Sweets 500 GMS</p>
+                    <p id="rates">₹ 170.00</p>
+                    <button class="buy">Buy Now</button>
+                </div>
+                <div class="child">
+                    <img src="AjmeriKalakand.webp" width="300px" height="350px" class="spc">
+                    <p id="item-names">Kalakanda Sweets 500 GMS</p>
+                    <p id="rates">₹ 270.00</p>
+                    <button class="buy">Buy Now</button>
+                </div>
+                <div class="child">
+                    <img src="laddu.webp" width="300px" height="350px" class="spc">
+                    <p id="item-names">Laddu Sweets 500 GMS</p>
+                    <p id="rates">₹ 200.00</p>
+                    <button class="buy">Buy Now</button>
+                </div>
+                <div class="child">
+                    <img src="MixedSweets.webp" width="300px" height="350px" class="spc">
+                    <p id="item-names">Sadakalakanda 500 GMS</p>
+                    <p id="rates">₹ 250.00</p>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="foot"> 
+            <img  class="footimg" src="https://pistahouse.in/cdn/shop/files/Group_468348.svg?v=1710440665pista-image" width="300" height="150">
+            
+                <table class="tabfoot">
+                    <tr>
+                        <th> QUICK Links </th>
+                        </tr>
+                        <tr>
+                        <td class="footdata"> <a href="index.html"> Home</a></td><br>
+                    </tr>
+                    <tr>
+                        <td class="footdata"> <a href="about.html"> AboutUs</a> </td><br>
+                    </tr>
+                    <tr> 
+                        <td class="footdata"> <a href="franchise.html"> FAQs</a> </td><br>
+                    </tr>
+                    <tr> 
+                        <td class="footdata">  <a href="contactus.html"> ContactUs</a></td><br>
+                    </tr>
+                    <tr> 
+                        <td class="footdata">  <a href="store.html"> StoreLocator</a></td><br>
+    
+                    </tr>
+                     
+                </table>  
+                <table class="tabfoot1">
+                    <tr> 
+                        <th>POLICIES</th>
+                    </tr>
+                    <tr> 
+                        <td class="footdata">PrivacyPolicy</td>
+                    </tr>
+                    <tr> 
+                        <td class="footdata">ReturnPolicy</td>
+                </tr>
+                </table>
+                <table class="tabfoot2">
+                    <tr>
+                        <th> Connect&nbsp;With&nbsp;Us</th>
+                    </tr> 
+                    <tr>
+                       
+                        <td class="footdata"> <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-x-twitter"></i> <i class="fa-brands fa-youtube"></i></td>
+                        
+                    </tr>
+    
+                </table>
+        </div>
+        
+         </footer>
+    </body>
+</html>
